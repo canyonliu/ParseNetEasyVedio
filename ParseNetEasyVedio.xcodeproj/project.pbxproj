@@ -14,6 +14,9 @@
 		9B248AE81BF89D9C00484A23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE71BF89D9C00484A23 /* Images.xcassets */; };
 		9B248AEB1BF89D9C00484A23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE91BF89D9C00484A23 /* LaunchScreen.xib */; };
 		9B248AF71BF89D9C00484A23 /* ParseNetEasyVedioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */; };
+		9B248B081BF89FF800484A23 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248B031BF89FF800484A23 /* TFHpple.m */; };
+		9B248B091BF89FF800484A23 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248B051BF89FF800484A23 /* TFHppleElement.m */; };
+		9B248B0A1BF89FF800484A23 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248B071BF89FF800484A23 /* XPathQuery.m */; };
 		A79057F24A46F5EDFAC98E17 /* libPods-ParseNetEasyVedio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB10DB1A2FF97409832B6A2 /* libPods-ParseNetEasyVedio.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,12 @@
 		9B248AF01BF89D9C00484A23 /* ParseNetEasyVedioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseNetEasyVedioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B248AF51BF89D9C00484A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseNetEasyVedioTests.m; sourceTree = "<group>"; };
+		9B248B021BF89FF800484A23 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		9B248B031BF89FF800484A23 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		9B248B041BF89FF800484A23 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		9B248B051BF89FF800484A23 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		9B248B061BF89FF800484A23 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		9B248B071BF89FF800484A23 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		AE4C759207ACDF3A9DE80ACD /* Pods-ParseNetEasyVedio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseNetEasyVedio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseNetEasyVedio/Pods-ParseNetEasyVedio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +104,7 @@
 				9B248AE41BF89D9C00484A23 /* Main.storyboard */,
 				9B248AE71BF89D9C00484A23 /* Images.xcassets */,
 				9B248AE91BF89D9C00484A23 /* LaunchScreen.xib */,
+				9B248B001BF89FF800484A23 /* 3rd */,
 				9B248ADA1BF89D9C00484A23 /* Supporting Files */,
 			);
 			path = ParseNetEasyVedio;
@@ -124,6 +134,27 @@
 				9B248AF51BF89D9C00484A23 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B248B001BF89FF800484A23 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				9B248B011BF89FF800484A23 /* TFHppleClasses */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		9B248B011BF89FF800484A23 /* TFHppleClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9B248B021BF89FF800484A23 /* TFHpple.h */,
+				9B248B031BF89FF800484A23 /* TFHpple.m */,
+				9B248B041BF89FF800484A23 /* TFHppleElement.h */,
+				9B248B051BF89FF800484A23 /* TFHppleElement.m */,
+				9B248B061BF89FF800484A23 /* XPathQuery.h */,
+				9B248B071BF89FF800484A23 /* XPathQuery.m */,
+			);
+			path = TFHppleClasses;
 			sourceTree = "<group>";
 		};
 		E5BA7D9DD90A7F7A1D30294E /* Frameworks */ = {
@@ -297,6 +328,9 @@
 				9B248AE31BF89D9C00484A23 /* ViewController.m in Sources */,
 				9B248AE01BF89D9C00484A23 /* AppDelegate.m in Sources */,
 				9B248ADD1BF89D9C00484A23 /* main.m in Sources */,
+				9B248B081BF89FF800484A23 /* TFHpple.m in Sources */,
+				9B248B0A1BF89FF800484A23 /* XPathQuery.m in Sources */,
+				9B248B091BF89FF800484A23 /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
