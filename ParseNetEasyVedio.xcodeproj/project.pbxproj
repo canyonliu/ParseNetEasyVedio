@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B248ADD1BF89D9C00484A23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248ADC1BF89D9C00484A23 /* main.m */; };
+		9B248AE01BF89D9C00484A23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248ADF1BF89D9C00484A23 /* AppDelegate.m */; };
+		9B248AE31BF89D9C00484A23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248AE21BF89D9C00484A23 /* ViewController.m */; };
+		9B248AE61BF89D9C00484A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE41BF89D9C00484A23 /* Main.storyboard */; };
+		9B248AE81BF89D9C00484A23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE71BF89D9C00484A23 /* Images.xcassets */; };
+		9B248AEB1BF89D9C00484A23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE91BF89D9C00484A23 /* LaunchScreen.xib */; };
+		9B248AF71BF89D9C00484A23 /* ParseNetEasyVedioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */; };
+		A79057F24A46F5EDFAC98E17 /* libPods-ParseNetEasyVedio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB10DB1A2FF97409832B6A2 /* libPods-ParseNetEasyVedio.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B248AF11BF89D9C00484A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B248ACF1BF89D9C00484A23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B248AD61BF89D9C00484A23;
+			remoteInfo = ParseNetEasyVedio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		177EE9C7FD39775C09AD0D8B /* Pods-ParseNetEasyVedio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseNetEasyVedio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseNetEasyVedio/Pods-ParseNetEasyVedio.debug.xcconfig"; sourceTree = "<group>"; };
+		6CB10DB1A2FF97409832B6A2 /* libPods-ParseNetEasyVedio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseNetEasyVedio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B248AD71BF89D9C00484A23 /* ParseNetEasyVedio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseNetEasyVedio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B248ADB1BF89D9C00484A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B248ADC1BF89D9C00484A23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B248ADE1BF89D9C00484A23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B248ADF1BF89D9C00484A23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B248AE11BF89D9C00484A23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B248AE21BF89D9C00484A23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B248AE51BF89D9C00484A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B248AE71BF89D9C00484A23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9B248AEA1BF89D9C00484A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9B248AF01BF89D9C00484A23 /* ParseNetEasyVedioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseNetEasyVedioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B248AF51BF89D9C00484A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseNetEasyVedioTests.m; sourceTree = "<group>"; };
+		AE4C759207ACDF3A9DE80ACD /* Pods-ParseNetEasyVedio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseNetEasyVedio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseNetEasyVedio/Pods-ParseNetEasyVedio.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B248AD41BF89D9C00484A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79057F24A46F5EDFAC98E17 /* libPods-ParseNetEasyVedio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B248AED1BF89D9C00484A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B248ACE1BF89D9C00484A23 = {
+			isa = PBXGroup;
+			children = (
+				9B248AD91BF89D9C00484A23 /* ParseNetEasyVedio */,
+				9B248AF31BF89D9C00484A23 /* ParseNetEasyVedioTests */,
+				9B248AD81BF89D9C00484A23 /* Products */,
+				EAEF834311EFDA811C286FA2 /* Pods */,
+				E5BA7D9DD90A7F7A1D30294E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B248AD81BF89D9C00484A23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B248AD71BF89D9C00484A23 /* ParseNetEasyVedio.app */,
+				9B248AF01BF89D9C00484A23 /* ParseNetEasyVedioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B248AD91BF89D9C00484A23 /* ParseNetEasyVedio */ = {
+			isa = PBXGroup;
+			children = (
+				9B248ADE1BF89D9C00484A23 /* AppDelegate.h */,
+				9B248ADF1BF89D9C00484A23 /* AppDelegate.m */,
+				9B248AE11BF89D9C00484A23 /* ViewController.h */,
+				9B248AE21BF89D9C00484A23 /* ViewController.m */,
+				9B248AE41BF89D9C00484A23 /* Main.storyboard */,
+				9B248AE71BF89D9C00484A23 /* Images.xcassets */,
+				9B248AE91BF89D9C00484A23 /* LaunchScreen.xib */,
+				9B248ADA1BF89D9C00484A23 /* Supporting Files */,
+			);
+			path = ParseNetEasyVedio;
+			sourceTree = "<group>";
+		};
+		9B248ADA1BF89D9C00484A23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B248ADB1BF89D9C00484A23 /* Info.plist */,
+				9B248ADC1BF89D9C00484A23 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B248AF31BF89D9C00484A23 /* ParseNetEasyVedioTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */,
+				9B248AF41BF89D9C00484A23 /* Supporting Files */,
+			);
+			path = ParseNetEasyVedioTests;
+			sourceTree = "<group>";
+		};
+		9B248AF41BF89D9C00484A23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B248AF51BF89D9C00484A23 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5BA7D9DD90A7F7A1D30294E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CB10DB1A2FF97409832B6A2 /* libPods-ParseNetEasyVedio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEF834311EFDA811C286FA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				177EE9C7FD39775C09AD0D8B /* Pods-ParseNetEasyVedio.debug.xcconfig */,
+				AE4C759207ACDF3A9DE80ACD /* Pods-ParseNetEasyVedio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B248AD61BF89D9C00484A23 /* ParseNetEasyVedio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B248AFA1BF89D9C00484A23 /* Build configuration list for PBXNativeTarget "ParseNetEasyVedio" */;
+			buildPhases = (
+				56872AE41135DF610520D2F6 /* Check Pods Manifest.lock */,
+				9B248AD31BF89D9C00484A23 /* Sources */,
+				9B248AD41BF89D9C00484A23 /* Frameworks */,
+				9B248AD51BF89D9C00484A23 /* Resources */,
+				F3063028025A7A4AA0E63E0A /* Embed Pods Frameworks */,
+				A7B64BBEC22C521E7EEE6D2B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseNetEasyVedio;
+			productName = ParseNetEasyVedio;
+			productReference = 9B248AD71BF89D9C00484A23 /* ParseNetEasyVedio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B248AEF1BF89D9C00484A23 /* ParseNetEasyVedioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B248AFD1BF89D9C00484A23 /* Build configuration list for PBXNativeTarget "ParseNetEasyVedioTests" */;
+			buildPhases = (
+				9B248AEC1BF89D9C00484A23 /* Sources */,
+				9B248AED1BF89D9C00484A23 /* Frameworks */,
+				9B248AEE1BF89D9C00484A23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B248AF21BF89D9C00484A23 /* PBXTargetDependency */,
+			);
+			name = ParseNetEasyVedioTests;
+			productName = ParseNetEasyVedioTests;
+			productReference = 9B248AF01BF89D9C00484A23 /* ParseNetEasyVedioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B248ACF1BF89D9C00484A23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = WayneLiu;
+				TargetAttributes = {
+					9B248AD61BF89D9C00484A23 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9B248AEF1BF89D9C00484A23 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9B248AD61BF89D9C00484A23;
+					};
+				};
+			};
+			buildConfigurationList = 9B248AD21BF89D9C00484A23 /* Build configuration list for PBXProject "ParseNetEasyVedio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B248ACE1BF89D9C00484A23;
+			productRefGroup = 9B248AD81BF89D9C00484A23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B248AD61BF89D9C00484A23 /* ParseNetEasyVedio */,
+				9B248AEF1BF89D9C00484A23 /* ParseNetEasyVedioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B248AD51BF89D9C00484A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B248AE61BF89D9C00484A23 /* Main.storyboard in Resources */,
+				9B248AEB1BF89D9C00484A23 /* LaunchScreen.xib in Resources */,
+				9B248AE81BF89D9C00484A23 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B248AEE1BF89D9C00484A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56872AE41135DF610520D2F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B64BBEC22C521E7EEE6D2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseNetEasyVedio/Pods-ParseNetEasyVedio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3063028025A7A4AA0E63E0A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseNetEasyVedio/Pods-ParseNetEasyVedio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B248AD31BF89D9C00484A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B248AE31BF89D9C00484A23 /* ViewController.m in Sources */,
+				9B248AE01BF89D9C00484A23 /* AppDelegate.m in Sources */,
+				9B248ADD1BF89D9C00484A23 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B248AEC1BF89D9C00484A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B248AF71BF89D9C00484A23 /* ParseNetEasyVedioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B248AF21BF89D9C00484A23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B248AD61BF89D9C00484A23 /* ParseNetEasyVedio */;
+			targetProxy = 9B248AF11BF89D9C00484A23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B248AE41BF89D9C00484A23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B248AE51BF89D9C00484A23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B248AE91BF89D9C00484A23 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B248AEA1BF89D9C00484A23 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B248AF81BF89D9C00484A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B248AF91BF89D9C00484A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B248AFB1BF89D9C00484A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177EE9C7FD39775C09AD0D8B /* Pods-ParseNetEasyVedio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseNetEasyVedio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B248AFC1BF89D9C00484A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4C759207ACDF3A9DE80ACD /* Pods-ParseNetEasyVedio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseNetEasyVedio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9B248AFE1BF89D9C00484A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParseNetEasyVedioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseNetEasyVedio.app/ParseNetEasyVedio";
+			};
+			name = Debug;
+		};
+		9B248AFF1BF89D9C00484A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParseNetEasyVedioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseNetEasyVedio.app/ParseNetEasyVedio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B248AD21BF89D9C00484A23 /* Build configuration list for PBXProject "ParseNetEasyVedio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B248AF81BF89D9C00484A23 /* Debug */,
+				9B248AF91BF89D9C00484A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B248AFA1BF89D9C00484A23 /* Build configuration list for PBXNativeTarget "ParseNetEasyVedio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B248AFB1BF89D9C00484A23 /* Debug */,
+				9B248AFC1BF89D9C00484A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B248AFD1BF89D9C00484A23 /* Build configuration list for PBXNativeTarget "ParseNetEasyVedioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B248AFE1BF89D9C00484A23 /* Debug */,
+				9B248AFF1BF89D9C00484A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B248ACF1BF89D9C00484A23 /* Project object */;
+}
