@@ -6,6 +6,8 @@
 target 'ParseNetEasyVedio' do
 pod 'AFNetworking', '~> 2.6.0'
 pod 'FMDB', '~> 2.5'
+pod 'MBProgressHUD'
+pod 'Reachability'
 
 end
 

@@ -7,26 +7,42 @@
 //
 
 #import "NetEasyHttpRequest.h"
+#import "HomePageParse.h"
+
+#define NETEASY_HOSTURL @"http://open.163.com/"
+
+#define NETEASY_SEARCHURL @"http://c.open.163.com/search/search.htm?query=&enc=%E2%84%A2#/search/course"
+
 
 @implementation NetEasyHttpRequest
 
+-(void)startNetEasy_HomePageHttpRequest{
+    
+    __weak ASIHTTPRequest *requestHomePage = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:NETEASY_HOSTURL]];
+    //[requestExam setDelegate:self];
+    // 默认为YES, 你可以设定它为NO来禁用gzip压缩
+    [requestHomePage setAllowCompressedResponse:YES];
+    [requestHomePage setValidatesSecureCertificate:NO];
+    [requestHomePage setCompletionBlock:^{
+        HomePageParse *parser = [HomePageParse new];
+        [parser parseHomePage:[requestHomePage responseData]];
+    }];
+    [requestHomePage setFailedBlock:^{
+        NSLog(@"网易公开课hostPage请求错误：%s:error == %@",__FUNCTION__,requestHomePage.error);
+    }];
+    [requestHomePage startSynchronous];
+}
+
+
+-(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType{
+    
+}
+
+
+
+
 //-(void)insertAction:(NSString *)cookievalue andCardID:(NSString *)cardIdStr andName:(NSString *)nameText
 //{
-/**
- *  __weak ASIHTTPRequest *requestExam = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:URL_Dean_Exam]];
- //[requestExam setDelegate:self];
- // 默认为YES, 你可以设定它为NO来禁用gzip压缩
- [requestExam setAllowCompressedResponse:YES];
- [requestExam setValidatesSecureCertificate:NO];
- [requestExam setCompletionBlock:^{
- ExamParser *parser = [ExamParser new];
- [parser parserExam:[requestExam responseData]];
- }];
- [requestExam setFailedBlock:^{
- NSLog(@"考试请求错误：%s:error == %@",__FUNCTION__,requestExam.error);
- }];
- [requestExam startSynchronous];
- */
 
 
 

@@ -1,5 +1,5 @@
 //
-//  NetEasyHttpRequest.h
+//  HomePageParse.h
 //  ParseNetEasyVedio
 //
 //  Created by WayneLiu on 15/11/20.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NetEasyHttpRequest : NSObject
+@interface HomePageParse : NSObject
+
+-(NSMutableArray *)parseHomePage:(NSData *)htmlData;
 
 @end

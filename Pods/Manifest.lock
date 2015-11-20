@@ -25,13 +25,19 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - MBProgressHUD (0.9.1)
+  - Reachability (3.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
   - FMDB (~> 2.5)
+  - MBProgressHUD
+  - Reachability
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
 
 COCOAPODS: 0.39.0

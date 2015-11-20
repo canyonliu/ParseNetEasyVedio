@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '13BD3BB76ECE036BD54D7118'
+               BlueprintIdentifier = '4B80C453573AE81659D4DA4F'
                BlueprintName = 'Pods-ParseNetEasyVedio'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-ParseNetEasyVedio.a'>
