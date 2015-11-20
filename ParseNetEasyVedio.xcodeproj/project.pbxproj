@@ -33,6 +33,7 @@
 		9B07D8681BFEDD46008E8448 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07D8641BFEDD46008E8448 /* libMBProgressHUD.a */; };
 		9B07D8691BFEDD46008E8448 /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07D8651BFEDD46008E8448 /* libReachability.a */; };
 		9B07D86B1BFEDD7E008E8448 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07D86A1BFEDD7E008E8448 /* libz.1.2.5.dylib */; };
+		9B07D86E1BFF1635008E8448 /* ClassDetailParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07D86D1BFF1635008E8448 /* ClassDetailParse.m */; };
 		9B248AE31BF89D9C00484A23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248AE21BF89D9C00484A23 /* ViewController.m */; };
 		9B248AE81BF89D9C00484A23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B248AE71BF89D9C00484A23 /* Images.xcassets */; };
 		9B248AF71BF89D9C00484A23 /* ParseNetEasyVedioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B248AF61BF89D9C00484A23 /* ParseNetEasyVedioTests.m */; };
@@ -97,6 +98,8 @@
 		9B07D8641BFEDD46008E8448 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
 		9B07D8651BFEDD46008E8448 /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "Pods/../build/Debug-iphoneos/libReachability.a"; sourceTree = "<group>"; };
 		9B07D86A1BFEDD7E008E8448 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		9B07D86C1BFF1635008E8448 /* ClassDetailParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassDetailParse.h; sourceTree = "<group>"; };
+		9B07D86D1BFF1635008E8448 /* ClassDetailParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassDetailParse.m; sourceTree = "<group>"; };
 		9B248AD71BF89D9C00484A23 /* ParseNetEasyVedio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseNetEasyVedio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B248AE11BF89D9C00484A23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9B248AE21BF89D9C00484A23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 			children = (
 				9B07D84A1BFED66D008E8448 /* HomePageParse.h */,
 				9B07D84B1BFED66D008E8448 /* HomePageParse.m */,
+				9B07D86C1BFF1635008E8448 /* ClassDetailParse.h */,
+				9B07D86D1BFF1635008E8448 /* ClassDetailParse.m */,
 			);
 			path = homePageParse;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				9B07D8311BFED161008E8448 /* ASIDownloadCache.m in Sources */,
 				9B07D8321BFED161008E8448 /* ASIFormDataRequest.m in Sources */,
 				9B07D8351BFED161008E8448 /* ASINetworkQueue.m in Sources */,
+				9B07D86E1BFF1635008E8448 /* ClassDetailParse.m in Sources */,
 				9B07D80F1BFECFDE008E8448 /* HomePageModel.m in Sources */,
 				9B07D8421BFED4D0008E8448 /* main.m in Sources */,
 				9B07D8151BFED0B0008E8448 /* StaticTypeModel.m in Sources */,

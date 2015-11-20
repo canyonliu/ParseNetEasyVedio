@@ -8,6 +8,7 @@
 
 #import "NetEasyHttpRequest.h"
 #import "HomePageParse.h"
+#import "ClassDetailParse.h"
 
 #define NETEASY_HOSTURL @"http://open.163.com/"
 
@@ -28,7 +29,7 @@
     [requestHomePage setCompletionBlock:^{
         //打印主页数据
 //        NSString *str = [[NSString alloc]initWithData:[requestHomePage responseData] encoding:NSUTF8StringEncoding];
-        NSLog(@"主页的数据为:%@",[requestHomePage responseString]);
+//        NSLog(@"主页的数据为:%@",[requestHomePage responseString]);
         
         HomePageParse *parser = [HomePageParse new];
        NSMutableArray *parseArray = [parser parseHomePage:[requestHomePage responseString]];
@@ -41,6 +42,37 @@
 }
 
 
+/**
+ *  详细课程
+ *
+ *  @param completionBlock 返回请求到的数据
+ */
+-(void)startNetEasy_ClassDetailWithURL:(NSString *)detailURL HttpRequestBlock: (void(^) (NSMutableArray *classDetailModelArray))completionBlock{
+    
+    __weak ASIHTTPRequest *requestDetailClass = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:detailURL]];
+    [requestDetailClass setAllowCompressedResponse:YES];
+    [requestDetailClass setValidatesSecureCertificate:NO];
+    [requestDetailClass setCompletionBlock:^{
+//        NSLog(@"主页的数据为:%@",[requestDetailClass responseString]);
+        
+        ClassDetailParse *parser = [ClassDetailParse new];
+        NSMutableArray *parseArray = [parser parseClassDetail:[requestDetailClass responseString]];
+        completionBlock(parseArray);
+    }];
+    [requestDetailClass setFailedBlock:^{
+        NSLog(@"网易公开课detailClass请求错误：%s:error == %@",__FUNCTION__,requestDetailClass.error);
+    }];
+    [requestDetailClass startSynchronous];
+}
+
+
+
+
+/**
+ *  搜索
+ *
+ *  @param staticType 搜索关键字
+ */
 -(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType{
     
 }

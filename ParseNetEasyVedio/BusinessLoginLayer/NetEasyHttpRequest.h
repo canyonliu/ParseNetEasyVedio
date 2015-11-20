@@ -16,6 +16,9 @@
 
 -(void)startNetEasy_HomePageHttpRequestBlock: (void(^) (NSMutableArray *homePageModelArray))completionBlock;
 
+
+-(void)startNetEasy_ClassDetailWithURL:(NSString *)detailURL HttpRequestBlock: (void(^) (NSMutableArray *classDetailModelArray))completionBlock;
+
 -(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType;
 
 @end
