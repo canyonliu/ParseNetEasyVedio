@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HomePageParse.h"
+#import "NetEasyHttpRequest.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    NetEasyHttpRequest *request = [NetEasyHttpRequest new];
+    [request startNetEasy_HomePageHttpRequest];
     
 }
 

@@ -17,6 +17,8 @@
 @implementation NetEasyHttpRequest
 
 -(void)startNetEasy_HomePageHttpRequest{
+
+    
     
     __weak ASIHTTPRequest *requestHomePage = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:NETEASY_HOSTURL]];
     //[requestExam setDelegate:self];
@@ -24,8 +26,12 @@
     [requestHomePage setAllowCompressedResponse:YES];
     [requestHomePage setValidatesSecureCertificate:NO];
     [requestHomePage setCompletionBlock:^{
+        //打印主页数据
+//        NSString *str = [[NSString alloc]initWithData:[requestHomePage responseData] encoding:NSUTF8StringEncoding];
+        NSLog(@"主页的数据为:%@",[requestHomePage responseString]);
+        
         HomePageParse *parser = [HomePageParse new];
-        [parser parseHomePage:[requestHomePage responseData]];
+       [parser parseHomePage:[requestHomePage responseData]];
     }];
     [requestHomePage setFailedBlock:^{
         NSLog(@"网易公开课hostPage请求错误：%s:error == %@",__FUNCTION__,requestHomePage.error);
