@@ -16,7 +16,7 @@
 
 @implementation NetEasyHttpRequest
 
--(void)startNetEasy_HomePageHttpRequest{
+-(void)startNetEasy_HomePageHttpRequestBlock: (void(^) (NSMutableArray *homePageModelArray))completionBlock{
 
     
     
@@ -31,7 +31,8 @@
         NSLog(@"主页的数据为:%@",[requestHomePage responseString]);
         
         HomePageParse *parser = [HomePageParse new];
-       [parser parseHomePage:[requestHomePage responseData]];
+       NSMutableArray *parseArray = [parser parseHomePage:[requestHomePage responseData]];
+        completionBlock(parseArray);
     }];
     [requestHomePage setFailedBlock:^{
         NSLog(@"网易公开课hostPage请求错误：%s:error == %@",__FUNCTION__,requestHomePage.error);

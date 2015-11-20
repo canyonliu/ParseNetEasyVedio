@@ -11,7 +11,10 @@
 
 @interface NetEasyHttpRequest : NSObject
 
--(void)startNetEasy_HomePageHttpRequest;
+
+
+
+-(void)startNetEasy_HomePageHttpRequestBlock: (void(^) (NSMutableArray *homePageModelArray))completionBlock;
 
 -(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType;
 

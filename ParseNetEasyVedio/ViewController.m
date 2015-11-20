@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NetEasyHttpRequest *request = [NetEasyHttpRequest new];
-    [request startNetEasy_HomePageHttpRequest];
+//    [request startNetEasy_HomePageHttpRequest];
+    [request startNetEasy_HomePageHttpRequestBlock:^(NSMutableArray *homePageModelArray) {
+        NSLog(@"返回的数据");
+    }];
     
 }
 
