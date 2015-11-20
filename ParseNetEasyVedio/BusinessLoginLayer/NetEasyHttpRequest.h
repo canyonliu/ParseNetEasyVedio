@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
 
 @interface NetEasyHttpRequest : NSObject
 
@@ -19,6 +20,6 @@
 
 -(void)startNetEasy_ClassDetailWithURL:(NSString *)detailURL HttpRequestBlock: (void(^) (NSMutableArray *classDetailModelArray))completionBlock;
 
--(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType;
+-(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType HttpRequestBlock: (void(^) (NSMutableArray *searchClassModelArray))completionBlock;
 
 @end

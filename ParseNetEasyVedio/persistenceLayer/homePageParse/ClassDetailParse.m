@@ -20,10 +20,11 @@
 //    NSString *utf8HtmlStr = [htmlString stringByReplacingOccurrencesOfString:@"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=GBK\"/>" withString:@"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>"];
     NSLog(@"2ssd == %@",utf8HtmlStr);
     NSData *htmlData = [utf8HtmlStr dataUsingEncoding:NSUTF8StringEncoding];
-//    @try {
+    @try {
     
         TFHpple *htmlParser = [[TFHpple alloc]initWithHTMLData:htmlData];
-//    视频链接先空出来
+#warning  视频链接先空出来
+        
 //        NSArray *tableLable1 = [htmlParser searchWithXPathQuery:@"//div[@id='j-flashArea']"];
 //        TFHppleElement *recommendDiv2 = [tableLable1 objectAtIndex:0];
 //    NSLog(@"3frdsfgs == %@",recommendDiv2.raw);
@@ -115,14 +116,14 @@
 
 
         return classDetailData;
-//    }
-//    @catch (NSException *exception) {
-//        NSLog(@"%s:__%@",__FUNCTION__,exception);
-//        return nil;
-//    }
-//    @finally {
-//        
-//    }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"%s:__%@",__FUNCTION__,exception);
+        return nil;
+    }
+    @finally {
+        
+    }
 }
 
 

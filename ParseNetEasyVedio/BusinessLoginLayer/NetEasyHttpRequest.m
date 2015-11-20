@@ -9,10 +9,11 @@
 #import "NetEasyHttpRequest.h"
 #import "HomePageParse.h"
 #import "ClassDetailParse.h"
+#import "SearchParse.h"
 
 #define NETEASY_HOSTURL @"http://open.163.com/"
 
-#define NETEASY_SEARCHURL @"http://c.open.163.com/search/search.htm?query=&enc=%E2%84%A2#/search/course"
+#define NETEASY_SEARCHURL @"http://c.open.163.com/dwr/call/plaincall/OpenSearchBean.searchCourse.dwr"
 
 
 @implementation NetEasyHttpRequest
@@ -73,8 +74,33 @@
  *
  *  @param staticType 搜索关键字
  */
--(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType{
+-(void)startNetEasy_SearchClassHttpRequest:(NSString *)staticType HttpRequestBlock: (void(^) (NSMutableArray *searchClassModelArray))completionBlock{
     
+    __weak ASIFormDataRequest *SearchClassRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:NETEASY_SEARCHURL]];
+    [SearchClassRequest setTimeOutSeconds:20];//设置超时
+    
+    [SearchClassRequest setPostValue:staticType forKey:@"c0-param0"];
+    [SearchClassRequest setPostValue:@"1" forKey:@"c0-param1"];//时间戳[NSNumber numberWithInt:1]
+    [SearchClassRequest setPostValue:@"20" forKey:@"c0-param2"];//json数据
+    [SearchClassRequest setPostValue:@"OpenSearchBean" forKey:@"c0-scriptName"];//超时时间
+    [SearchClassRequest setPostValue:@"0" forKey:@"c0-id"];//版本号
+    [SearchClassRequest setPostValue:@"searchCourse" forKey:@"c0-methodName"];//AES密钥
+    [SearchClassRequest setPostValue:@"190" forKey:@"scriptSessionId"];
+    [SearchClassRequest setPostValue:@"1" forKey:@"callCount"];
+    [SearchClassRequest setPostValue:@"0" forKey:@"batchId"];
+    
+    [SearchClassRequest setCompletionBlock:^{
+        NSLog(@"jsonstring----%@",[SearchClassRequest responseString]);
+        
+        SearchParse *parser = [SearchParse new];
+        NSMutableArray *parseArray = [parser parseSearch:[SearchClassRequest responseString]];
+        completionBlock(parseArray);
+    }];
+    [SearchClassRequest setFailedBlock:^{
+        NSLog(@"网易公开课SearchClassRequest请求错误：%s:error == %@",__FUNCTION__,SearchClassRequest.error);
+    }];
+    [SearchClassRequest startSynchronous];
+
 }
 
 
