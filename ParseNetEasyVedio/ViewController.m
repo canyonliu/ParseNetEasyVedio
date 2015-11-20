@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HomePageParse.h"
+//#import "HomePageParse.h"
 #import "NetEasyHttpRequest.h"
 
 @interface ViewController ()
@@ -19,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NetEasyHttpRequest *request = [NetEasyHttpRequest new];
-//    [request startNetEasy_HomePageHttpRequest];
+
     [request startNetEasy_HomePageHttpRequestBlock:^(NSMutableArray *homePageModelArray) {
-        NSLog(@"返回的数据");
+        NSLog(@"返回的数据 == %@",homePageModelArray);
     }];
     
 }

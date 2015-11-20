@@ -10,6 +10,6 @@
 
 @interface HomePageParse : NSObject
 
--(NSMutableArray *)parseHomePage:(NSData *)htmlData;
+-(NSMutableArray *)parseHomePage:(NSString *)htmlString;
 
 @end
